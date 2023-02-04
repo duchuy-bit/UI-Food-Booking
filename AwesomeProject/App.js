@@ -75,37 +75,7 @@ export default function App(){
         initialRouteName= {screenDefalt}
         screenOptions={{headerShown: false}}        
         >
-        {screenDefalt? (
-          <>
-                {/* <Stack.Screen 
-                  name="SlashScreen" 
-                  component={SlashScreen} 
-                  options={{
-                    headerShow: false,
-                  }}
-                  /> */}
-                  {isLogin==false ?
-                  <>
-                    <Stack.Screen 
-                    name="Login" 
-                    component={Login} 
-                    options={{
-                      headerShow: false,
-                    }}
-                    />
-
-                    <Stack.Screen 
-                    name="SignUp" 
-                    component={SignUp} 
-                    options={{
-                      headerShow: false,
-                    }}
-                    />
-                  </>:
-                  <></>}
-                  
-
-                  <Stack.Screen 
+         <Stack.Screen 
                   name="Home" 
                   component={Home} 
                   options={{
@@ -145,31 +115,6 @@ export default function App(){
                     headerShow: false,
                   }}
                   />
-                
-                
-          </>
-        ):(
-                  <>
-                
-                <Stack.Screen 
-                  name="Test" 
-                  component={Test} 
-                  options={{
-                    headerShow: false,
-                  }}
-                  />
-          
-          </>
-        )}
-        
-        
-        {/* <Stack.Screen 
-          name="HomeComponent" 
-          component={HomeComponent} 
-          options={{
-            headerShow: false,
-          }}
-          /> */}
       </Stack.Navigator>
   </NavigationContainer>
   );  
